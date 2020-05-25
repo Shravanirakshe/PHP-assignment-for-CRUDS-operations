@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Details</title>
+		<style>
+			body {
+				text-align: center;
+				background-color: yellow;
+			}
+
+			#mainHeading {
+				color: blue;
+				font-family: Arial;
+			}
+
+			#formInsert {
+				background-color: orange;
+				margin: 0 auto;
+				text-align: left;
+				padding: 20px;
+				width: 400px;
+				border: 2px solid;
+			}
+
+			input[type="text"] {
+				background-color: yellow;
+				padding: 12px;
+				width: 360px;
+			}
+
+			input[type="submit"], input[type="reset"] {
+				background-color: red;
+				color: white;
+				padding: 12px;
+				cursor: pointer;
+				width: 100px;
+			}
+			
+			#btns {
+				text-align: center;
+			}
+
+			* {
+				box-sizing: border-box; 
+			}
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+			<a href="student.html">Insert</a>|
+			<a href="delete.html">Delete</a>|
+			<a href="search.html">Search</a>|
+			<a href="update.html">Update</a>|
+			<a href="operations.php?param=value">Display</a>
+		</nav>
+		<h1 id="mainHeading">Student Details- Insert</h1>
+		<form id="formInsert" action="operations.php" method="post">
+			<label for="nameInsert">Name</label>
+			<br>
+			<input type="text" placeholder="Enter the full name" name="nameInsert">
+			<br><br>
+			<label for="rollNoInsert">Roll Number</label>
+			<br>
+			<input type="text" placeholder="Enter the roll number" name="rollNoInsert">
+			<br><br>
+			<label for="marksInsert">Marks</label>
+			<br>
+			<input type="text" placeholder="Enter your marks out of 100" name="marksInsert">
+			<br><br>
+			<p id="btns"><input type="submit" value="Submit" name="submitInsert">&ensp;&ensp;<input type="reset" value="Reset">
+			<br><br>
+		</form>
+	</body>
+</html>
